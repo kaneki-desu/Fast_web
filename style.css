@@ -1,57 +1,156 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-body{
-    font-family: "Roboto", sans-serif;
+body {
+    margin: 0;
+    font-family: 'Pacifico', sans-serif;
+    background-color: black;
+    background-size: cover;
+    background-image: url("b5.avif");
+  }
+  
+  .navbar {
+    background-color:#14151d;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    position: fixed;
     width: 100%;
-    height: 100vh;
-    border-color: rgb(86, 86, 205);
-}
-.container{
-    background-color: blueviolet;
-    position: relative;
-    top: 50px;    
-    width: 100%;
-    height: 550px;
-    padding: 0 50px;
-}
-.card{
-    width: calc(720px * (1 - (0.05 * var(--y)))) ;
-    height: calc(550px * (1 - (0.05 * var(--y))));
-    overflow: hidden;
-    border-radius: 20px ;
-    border: 8px solid wheat;
-    position: absolute;
-    top: calc(50px * (1 + (0.30 * var(--y)))); /*make 1.30=>0.3 for text hover to work in background also*/
-    right: 50px;
-    z-index: calc(100 - var( --y));
-    transform: translateX( calc(-15% * var(--y)) );
-    transform-origin: center center;
-    scale: 2.1rem;
-    box-shadow: 4px 3px 20px 1px rgb(0, 0, 0);
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px;
+    height: 86px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-right: 20px;
+    background: linear-gradient(to top, #14151d, rgb(70, 82, 114));
+
+  }
+  
+  .navbar img {
+    height: 80px;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+  }
+  
+  .navbar .sympho-logo {
+    margin-right: 50px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+a {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
 }
 
-.card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+a:hover {
+  color: #8698ac; 
 }
-.text{
-    position: relative;
-    left: 50px;
-    top: 0px;
-    color: white;
-    font-weight: 300;
-    font-size: 30px;
-    font-style: italic;
-    text-shadow: 3px 2px 3px black;
-    text-decoration: wavy;
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #9fb6cf; 
+  transform: scaleX(0); 
+  bottom:0;
+  left:0;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out; /* Smooth sliding effect */
 }
-.card:hover .text{
-    z-index: calc(100 - var( --y));
-    top: calc(100px * (1 - (1.30 * var(--y))) * -1);/*make 1.30=>0.3 for text hover to work in background also*/
-    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    
+
+a:hover::before {
+  transform: scaleX(1); 
+  transform-origin: bottom left;
 }
+.heading {
+  text-align: left;
+  font-size: 100px;
+  font-weight: 600;
+  margin-left: 5px;
+  COLOR:WHITE;
+
+  margin-top:100px;
+  height:100px;
+  display: flex;
+  justify-content:space-evenly;
+  margin-top:150px;
+}
+.heading box2{
+margin-left:150px;
+margin-top:50px;
+
+}
+.heading box1 {
+  background-color:black;
+  margin-left:10px;
+  size:100px;
+}
+.content {
+  color:white;
+  margin-top:160px;
+  
+  font-size:60px;
+  width:70%;
+  margin-left:120px;
+}
+.boxes {
+  background: url("b6.avif");
+  height:500px;
+  width:50%;
+  display:flex;
+  margin-left:30px;
+  border-radius: 20%;
+}
+.boxes img{
+  width:100%;
+  height:50%;
+  margin-left:90px;
+  margin-top:120px;
+  
+}
+.boxes {
+  margin-left:15px;
+  margin-top:20px;
+  margin-left:50px;
+  display: flex;
+
+  
+}
+.boxes one img {
+  transition: transform 0.3s ease-in-out;
+  padding-right:50px ;
+  background-color: aqua;
+}
+img:hover {
+  transform: scale(1.2); 
+}
+.text img {
+  margin-left:450px;
+  margin-bottom:500px;
+
+
+}
+.boxex second {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
