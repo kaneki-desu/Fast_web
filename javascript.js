@@ -1,12 +1,20 @@
 //DOM
 const container = document.querySelector('.container')
+var link = window.location.href.toString();
+const host = window.location.host
+// const imgid = link.replace('index.html', `${pic_name}`)
+const imgid1 = link.replace('index.html', '') + 'obviettivo.jpg';
+const imgid2 = link.replace('index.html', '') + 'aaveg.jpg';
+const imgid3 = link.replace('index.html', '') + 'symphonits.jpg';
+const imgid4 = link.replace('index.html', '') + 'advay.png';
 
 //constants
 const imgpath = [
-    'http://127.0.0.1:3000/tried/obviettivo.jpg',
-    'http://127.0.0.1:3000/tried/aaveg.jpg',
-    'http://127.0.0.1:3000/tried/symphonits.jpg',
-    'http://127.0.0.1:3000/tried/advay.png'
+    `${imgid1}`,
+    `${imgid2}`,
+    `${imgid3}`,
+    `${imgid4}`,
+
 ]
 
 const cardtxt = [
@@ -39,7 +47,6 @@ function appenNewCard(){
     
 };
 //first 5 cards
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < imgpath.length; i++) {
     appenNewCard();
 }
-
