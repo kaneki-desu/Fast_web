@@ -32,7 +32,10 @@ body{
     scale: 2.1rem;
     box-shadow: 4px 3px 20px 1px rgb(0, 0, 0);
 }
-
+.container > :not(:first-child){
+    filter: blur(5px);
+    pointer-events: none;
+}
 .card img{
     width: 100%;
     height: 100%;
