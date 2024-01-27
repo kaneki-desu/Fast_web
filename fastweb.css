@@ -273,40 +273,54 @@ nav{
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
+
 .merchandise{
     text-align: center;
     margin: 50px;
 }
-  .merchandise > img{
+
+.merchandise img{
     transform: rotate(0deg);
     transition: 2s;
     width: 450px;
     cursor: pointer;
-  }
-  .getmerch{
+}
+
+.getmerch{
     margin-top: 70px;
     text-align: center;
     font-size: 70px;
     color: transparent;
-    color: violet
-    /*  */
-    /* font-weight: 800; */
+    color: violet;
+}
 
-  }
+#footer{
+    background-color: black;
+    min-height: 200vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+#footer h1{
+    color: violet;
+    font-family: pajun;
+    font-size: 120px;
+}
