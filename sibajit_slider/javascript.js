@@ -3,10 +3,12 @@ const container = document.querySelector('.container')
 var link = window.location.href.toString();
 const host = window.location.host
 // const imgid = link.replace('index.html', `${pic_name}`)
-const imgid1 = link.replace('index.html', 'sibajit_slider/slider_img/') + 'Zayka.jpeg';
-const imgid2 = link.replace('index.html', 'sibajit_slider/slider_img/') + 'thundermarch.jpg';
-const imgid3 = link.replace('index.html', 'sibajit_slider/slider_img/') + 'Flashmob.jpeg';
-const imgid4 = link.replace('index.html', 'sibajit_slider/slider_img/') + 'Rubelelo.jpeg';
+
+const imgid1 = link.replace('index.html', '') + 'sibajit_slider/slider_img/Zayka.jpeg';
+const imgid2 = link.replace('index.html', '') + 'sibajit_slider/slider_img/thundermarch.jpg';
+const imgid3 = link.replace('index.html', '') + 'sibajit_slider/slider_img/Flashmob.jpeg';
+const imgid4 = link.replace('index.html',"") + 'sibajit_slider/slider_img/Rubelelo.jpeg';
+
 
 //constants
 const imgpath = [
