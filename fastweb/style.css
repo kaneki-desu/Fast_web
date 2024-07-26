@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100vh;
+    border-color: rgb(86, 86, 205);
+}
+.container{
+    background-color: blueviolet;
+    position: relative;
+    top: 50px;    
+    width: 100%;
+    height: 550px;
+    padding: 0 50px;
+}
+.card{
+    width: calc(720px * (1 - (0.05 * var(--y)))) ;
+    height: calc(550px * (1 - (0.05 * var(--y))));
+    overflow: hidden;
+    border-radius: 20px ;
+    border: 8px solid wheat;
+    position: absolute;
+    top: calc(50px * (1 + (0.30 * var(--y)))); /*make 1.30=>0.3 for text hover to work in background also*/
+    right: 50px;
+    z-index: calc(100 - var( --y));
+    transform: translateX( calc(-15% * var(--y)) );
+    transform-origin: center center;
+    scale: 2.1rem;
+    box-shadow: 4px 3px 20px 1px rgb(0, 0, 0);
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text{
+    position: relative;
+    left: 50px;
+    top: 0px;
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    font-style: italic;
+    text-shadow: 3px 2px 3px black;
+    text-decoration: wavy;
+}
+.card:hover .text{
+    z-index: calc(100 - var( --y));
+    top: calc(100px * (1 - (1.30 * var(--y))) * -1);/*make 1.30=>0.3 for text hover to work in background also*/
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}

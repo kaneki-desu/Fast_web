@@ -28,12 +28,13 @@ html, body{
 
 #main video{
     top: 0;
+    height: screen;
     width: 100%;
     position: fixed;
 }
 
 #page-1{
-    height: 50vh;
+    height: 20vw;
     width: 100%;
     /* background: linear-gradient(#000000, 65%, rgb(38, 7, 38)); */
     position: fixed;
@@ -170,7 +171,7 @@ nav{
 
 #card-holder{
     position: relative;
-    top: 100vh;
+    top: 55.5vw;
     min-height: 100vh;
     width: 100%;
     background: linear-gradient(#672c5b, 55% ,black);
@@ -273,40 +274,58 @@ nav{
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
+
 .merchandise{
     text-align: center;
     margin: 50px;
+    padding-bottom: 10vw;
+    padding-top: 10vw;
 }
-  .merchandise > img{
+
+.merchandise img{
     transform: rotate(0deg);
     transition: 2s;
     width: 450px;
     cursor: pointer;
-  }
-  .getmerch{
+}
+
+.getmerch{
     margin-top: 70px;
     text-align: center;
     font-size: 70px;
     color: transparent;
-    color: violet
-    /*  */
-    /* font-weight: 800; */
+    color: violet;
+}
 
-  }
+/* #footer{
+    position: absolute;
+    z-index: 99;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+#footer h1{
+    color: violet;
+    font-family: pajun;
+    font-size: 120px;
+} */
